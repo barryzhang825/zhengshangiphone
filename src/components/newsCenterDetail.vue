@@ -33,28 +33,29 @@
   .news-deatil{
     padding:0.5em 0.3em 0.6em 0.3em;
     overflow: hidden;
+    box-sizing: border-box;
   }
-  .news-deatil >>>h1 {
-    font-size: 0.24em;
-  }
-  .news-deatil >>>h2 {
-    font-size: 0.22em;
-  }
-  .news-deatil >>>h3 {
-    font-size: 0.18em;
-  }
-  .news-deatil >>>h4 {
-    font-size: 0.16em;
-  }
-  .news-deatil >>>h5 {
-    font-size: 0.12em;
-  }
-  .news-deatil >>>h6 {
-    font-size: 0.1em;
-  }
-  .news-deatil >>>p,.news-deatil >>>div,.news-deatil >>>span,.news-deatil >>>a,.news-deatil >>>ul,.news-deatil >>>li{
-    font-size: 0.12em;
-  }
+  /*.news-deatil >>>h1 {*/
+  /*  font-size: 0.24em;*/
+  /*}*/
+  /*.news-deatil >>>h2 {*/
+  /*  font-size: 0.22em;*/
+  /*}*/
+  /*.news-deatil >>>h3 {*/
+  /*  font-size: 0.18em;*/
+  /*}*/
+  /*.news-deatil >>>h4 {*/
+  /*  font-size: 0.16em;*/
+  /*}*/
+  /*.news-deatil >>>h5 {*/
+  /*  font-size: 0.12em;*/
+  /*}*/
+  /*.news-deatil >>>h6 {*/
+  /*  font-size: 0.1em;*/
+  /*}*/
+  /*.news-deatil >>>p,.news-deatil >>>div,.news-deatil >>>span,.news-deatil >>>a,.news-deatil >>>ul,.news-deatil >>>li{*/
+  /*  font-size: 0.12em;*/
+  /*}*/
   /* .news-deatil >>>p{
     text-indent: 2em;
   } */
