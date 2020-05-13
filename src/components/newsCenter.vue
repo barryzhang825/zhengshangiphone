@@ -1,26 +1,25 @@
 <template>
-   <div class="news">
-     <div class="banner">
-       <div class="banner-text">用专业的技术，为您提供最佳的解决方案</div>
-     </div>
-     <div class="case">
-       <PaginationHeader :url="casUrl"  @selectIndex="selectAxiox"></PaginationHeader>
-       <ul class="case-body">
-         <li class="casei-item" v-for="(attr,$index) in caseList" :key="$index" @click="goNewsDetail(attr.title)">
-           <div class="casei-img" v-if="attr.url" :style="'background-image: url('+attr.url+')'"></div>
-           <div class="casei-img" v-if="!attr.url" style="background-image: url('/static/images/news_item.png')"></div>
-           <div class="newsi">
-             <div class="newsi-text">{{attr.title}}</div>
-             <div class="newsi-time"><span class="el-icon-time"></span>{{attr.newsTime}}</div>
-             <div class="newsi-lead">{{attr.lead}}</div>
-           </div>
-         </li>
-       </ul>
-       <div class="look-more">
-         <div class="lookm-text" @click="getMore">加载更多>></div>
-       </div>
-     </div>
-   </div>
+  <div class="news">
+    <div class="banner">
+      <div class="banner-text">用专业的技术，为您提供最佳的解决方案</div>
+    </div>
+    <div class="case">
+      <PaginationHeader :url="casUrl"  @selectIndex="selectAxiox"></PaginationHeader>
+      <ul class="case-body">
+        <li class="casei-item" v-for="(attr,$index) in caseList" :key="$index" @click="goNewsDetail(attr.title)">
+          <div class="casei-img"><img :src="attr.url" alt="图片"></div>
+          <div class="newsi">
+            <div class="newsi-text">{{attr.title}}</div>
+            <div class="newsi-time"><span class="el-icon-time"></span>{{attr.newsTime}}</div>
+            <div class="newsi-lead">{{attr.lead}}</div>
+          </div>
+        </li>
+      </ul>
+      <div class="look-more">
+        <div class="lookm-text" @click="getMore">加载更多>></div>
+      </div>
+    </div>
+  </div>
 </template>
 
 <style scoped>
@@ -75,9 +74,6 @@
     width: 100%;
     height: 3em;
     overflow: hidden;
-
-    background-size: cover;
-    background-position: center center;
   }
   .casei-img img{
     width: 100%;
@@ -108,7 +104,7 @@
   }
   .newsi-time{
     color: #999;
-    font-size: 0.16em;
+    font-size: 0.2em;
     margin:14px 0 10px 0;
   }
   .newsi-time span{
@@ -118,7 +114,7 @@
     margin-right: 7px;
   }
   .newsi-lead{
-    font-size: 0.16em;
+    font-size: 0.2em;
     color: #666;
     line-height: 2em;
 
