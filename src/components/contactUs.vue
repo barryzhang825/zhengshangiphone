@@ -246,7 +246,7 @@
       textFun(){
         axios({
           method:'post',
-          url:'http://39.98.80.223:8080/official-website/contactUs/projectNeed',
+          url:'https://www.zhengshangwl.com/contactUs/projectNeed',
           data:{
             name:"haha",
             phoneNumber:"15038305394",
@@ -304,7 +304,7 @@
               //console.log(dataStr);
               axios({
                 method:'post',
-                url:'http://39.98.80.223:8080/official-website/contactUs/projectNeed',
+                url:'https://www.zhengshangwl.com/contactUs/projectNeed',
                 data:dataStr,
                 headers:{'Content-Type': 'application/x-www-form-urlencoded'},
                 transformRequest: function(obj) {

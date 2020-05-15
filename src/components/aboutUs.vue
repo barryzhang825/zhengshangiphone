@@ -224,7 +224,7 @@
       var _this=this;
 
       //_this.$des();
-      _this.$get('/official-website/companyImage/getImageUrl',{}).then(data=>{
+      _this.$get('/companyImage/getImageUrl',{}).then(data=>{
         var seller=JSON.stringify(data);
         //console.log('结果111:'+seller);
         _this.companyList=data.smallImageUrl;

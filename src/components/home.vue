@@ -109,7 +109,7 @@
           caseGroup:[{}]
         }],
         caseIndex:0,
-        casUrl:"/official-website/index/getCustomerCase"
+        casUrl:"/index/getCustomerCase"
       }
     },
     created(){
@@ -119,7 +119,7 @@
       var _this=this;
 
       //轮播图
-      _this.$get('/official-website/index/getSlideshow',{}).then(data=>{
+      _this.$get('/index/getSlideshow',{}).then(data=>{
         var seller=JSON.stringify(data);
         //console.log('结果111:'+seller);
         var arrList = data;
@@ -138,7 +138,7 @@
         }); */
       })
       //客户案例
-      _this.$get('/official-website/index/getCustomerCase',{}).then(data=>{
+      _this.$get('/index/getCustomerCase',{}).then(data=>{
         var seller=JSON.stringify(data);
       	//console.log('结果:'+seller);
         _this.caseList=data;
@@ -155,7 +155,7 @@
       	console.log(error);
       });
       //我们的服务
-      _this.$get('/official-website/index/getOurService',{}).then(data=>{
+      _this.$get('/index/getOurService',{}).then(data=>{
         var seller=JSON.stringify(data);
       	//console.log('结果:'+seller);
         _this.serviceList=data;
@@ -171,7 +171,7 @@
       		console.log(error);
       });
       //我们的优势
-      _this.$get('/official-website/index/getOurAdvantages',{}).then(data=>{
+      _this.$get('/index/getOurAdvantages',{}).then(data=>{
         var seller=JSON.stringify(data);
       	//console.log('结果:'+seller);
         _this.advantageList=data;
@@ -190,7 +190,7 @@
       		console.log(error);
       });
       //新闻中心
-      _this.$get('/official-website/index/getNews',{}).then(data=>{
+      _this.$get('/index/getNews',{}).then(data=>{
         var seller=JSON.stringify(data);
       	//console.log('结果:'+seller);
         //_this.advantageList=data.data;
@@ -208,7 +208,7 @@
       		console.log(error);
       });
       //合作伙伴
-      _this.$get('/official-website/index/getPartner',{}).then(data=>{
+      _this.$get('/index/getPartner',{}).then(data=>{
         var seller=JSON.stringify(data);
       	//console.log('结果:'+seller);
         _this.partnerList=data;

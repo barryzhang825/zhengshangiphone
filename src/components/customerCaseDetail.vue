@@ -184,7 +184,7 @@
         caseGroupName:_this.$route.query.caseGroupName
       };
       //console.log(titleStr);
-      _this.$get('/official-website/customerCase/customerCasepageDetail',titleStr).then(data=>{
+      _this.$get('/customerCase/customerCasepageDetail',titleStr).then(data=>{
         var seller=JSON.stringify(data);
         //console.log('结果111:'+seller);
         _this.title = data.caseName;

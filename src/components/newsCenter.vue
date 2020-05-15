@@ -142,7 +142,7 @@
       return {
         caseList:[{}],
         caseIndex:0,
-        casUrl:"/official-website/newsPageDetail/getNewsGroupName",
+        casUrl:"/newsPageDetail/getNewsGroupName",
         totalPages:1,  //默认总页数为1
         currentNav:"公司新闻", //默认当前类别
         selectItemPage:1  ,//默认选中页面
@@ -155,7 +155,7 @@
     },
     mounted (){
       var _this=this;
-      _this.$get('/official-website/newsPageDetail/getNewsPageDetail',{}).then(data=>{
+      _this.$get('/newsPageDetail/getNewsPageDetail',{}).then(data=>{
         var seller=JSON.stringify(data);
         //console.log('结果:'+seller);
         _this.caseList=data.list;
@@ -186,7 +186,7 @@
           newsGroupName:_this.currentNav,
           pageSize:_this.pageNumber
         }
-        _this.$get('/official-website/newsPageDetail/getNewsPageDetail',dataObject).then(data=>{
+        _this.$get('/newsPageDetail/getNewsPageDetail',dataObject).then(data=>{
           var seller=JSON.stringify(data);
           //console.log('结果:'+seller);
           _this.caseList=data.list;
@@ -232,7 +232,7 @@
           }
         }
 
-        _this.$get('/official-website/newsPageDetail/getNewsPageDetail',dataObject).then(data=>{
+        _this.$get('/newsPageDetail/getNewsPageDetail',dataObject).then(data=>{
           var seller=JSON.stringify(data);
           //console.log('结果:'+seller);
           var countList=data.list;  //当前数组

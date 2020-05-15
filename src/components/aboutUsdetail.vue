@@ -73,7 +73,7 @@
     mounted (){
       var _this=this;
       //关于我们
-      _this.$get('/official-website/index/getAboutUs',{}).then(data=>{
+      _this.$get('/index/getAboutUs',{}).then(data=>{
         var seller=JSON.stringify(data);
       	//console.log('结果:'+seller);
         _this.aboutUsImg=data.url;

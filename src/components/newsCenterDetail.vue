@@ -85,7 +85,7 @@
       _this.$ami('.banner-text',0,'center','0%',0.1,true);
       //console.log(_this.$route.query.title);
       var titleStr={title:_this.$route.query.title};
-      _this.$get('/official-website/newsPageDetail/getNewsText',titleStr).then(data=>{
+      _this.$get('/newsPageDetail/getNewsText',titleStr).then(data=>{
         var seller=JSON.stringify(data);
         //console.log('结果:'+seller);
         _this.newsContent=data;

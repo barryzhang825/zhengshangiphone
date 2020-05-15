@@ -98,7 +98,7 @@
     },
     mounted (){
       var _this=this;
-      /*_this.$get('/official-website/index/getCustomerCase',{}).then(data=>{
+      /*_this.$get('/index/getCustomerCase',{}).then(data=>{
         var seller=JSON.stringify(data);
         //console.log('结果:'+seller);
         _this.caseList=data;

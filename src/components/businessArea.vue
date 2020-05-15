@@ -32,7 +32,7 @@
     },
     mounted (){
       var _this=this;
-      _this.$get('/official-website/business/getBusinessDetail',{}).then(data=>{
+      _this.$get('/business/getBusinessDetail',{}).then(data=>{
         var seller=JSON.stringify(data);
         //console.log('结果111:'+seller);
         _this.businessList = data;
