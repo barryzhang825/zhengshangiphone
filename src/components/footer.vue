@@ -40,7 +40,7 @@
     methods: {
       goYuFun(){
         //window.location.href='http://www.miit.gov.cn/';  //当前窗口
-        window.open('http://www.miit.gov.cn/'); //新窗口
+        window.open('http://www.beian.miit.gov.cn/'); //新窗口
       }
     },
     watch: {}
