@@ -4,7 +4,7 @@
       <img src="../../static/images/map.png" alt="公司地址">
     </div> -->
     <div class="info-text">
-      QQ邮箱 ：943870975@qq.com <br />
+      QQ邮箱 ：574807769@qq.com <br />
       联系电话：15238699705<br />
       办公地址：郑州市郑东新区金水东路绿地新都会6号楼1521/1522<br />
       分部：弘廷科技<br />
